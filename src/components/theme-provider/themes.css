@@ -1,0 +1,37 @@
+:root {
+    /* light theme tokens */
+    --background-primary-light: #f5f5f5;
+    --container-light: #f5f5f5;
+    --font-light: #333;
+    --border-light: #ddd;
+    --sun-opacity-light: 1;
+    --moon-opacity-light: 0;
+
+    /* dark theme tokens */
+    --background-primary-dark: #222;
+    --container-dark: #272727;
+    --font-dark: #f5f5f5;
+    --border-dark: #545454;
+    --opacity-dark: 0;
+    --sun-opacity-dark: 0;
+    --moon-opacity-dark: 1;
+}
+
+/* map tokens to proper theme */
+[data-theme="light"] {
+    --background-primary: var(--background-primary-light);
+    --container: var(--container-light);
+    --font: var(--font-light);
+    --border: var(--border-light);
+    --sun-opacity: var(--sun-opacity-light);
+    --moon-opacity: var(--moon-opacity-light);
+}
+
+[data-theme="dark"] {
+    --background-primary: var(--background-primary-dark);
+    --container: var(--container-dark);
+    --font: var(--font-dark);
+    --border: var(--border-dark);
+    --sun-opacity: var(--sun-opacity-dark);
+    --moon-opacity: var(--moon-opacity-dark);
+}
